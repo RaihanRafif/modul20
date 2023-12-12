@@ -1,25 +1,46 @@
 package utilites;
 
-import org.testng.TestNG;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.testng.TestNG;
+import org.testng.xml.XmlClass;
+import org.testng.xml.XmlSuite;
+import org.testng.xml.XmlTest;
+
 public class TestRunner {
-
     public static void main(String[] args) {
-        // Create a TestNG object
-        TestNG testNG = new TestNG();
+        TestNG testng = new TestNG();
+        XmlSuite suite = new XmlSuite();
+        suite.setName("Test API");
 
-        // Create a list to store test classes
-        List<Class<?>> classes = new ArrayList<>();
+        // Add a list of XmlTests to the XmlSuite
+        List<XmlTest> tests = new ArrayList<>();
 
-        // Add test classes to the list
-        classes.add(tests.APITest.class); // Change this to your actual test class
+        // Define the test names based on your testng.xml
+        String[] testNames = { "Test Positive", "Test Negative","Test Boundary" };
 
-        // Set the test classes to be executed
-        testNG.setTestClasses(classes.toArray(new Class[0]));
+
+        for (String testName : testNames) {
+            XmlTest xmlTest = new XmlTest(suite);
+            xmlTest.setName(testName);
+
+            // Add the classes to the XmlTest
+            List<XmlClass> xmlClasses = new ArrayList<>();
+            xmlClasses.add(new XmlClass("tests.APITest"));
+            xmlTest.setClasses(xmlClasses);
+
+            tests.add(xmlTest);
+        }
+
+        // Add the suite to TestNG
+        List<XmlSuite> suites = new ArrayList<>();
+        suites.add(suite);
+
+
+        testng.setXmlSuites(suites);
 
         // Run the tests
-        testNG.run();
+        testng.run();
     }
 }

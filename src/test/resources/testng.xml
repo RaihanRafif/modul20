@@ -1,0 +1,30 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Test API">
+    <test name="Test Positive">
+        <classes>
+            <class name="tests.APITest">
+                <methods>
+                    <include name="testPositiveScenario"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Test Negative">
+        <classes>
+            <class name="tests.APITest">
+                <methods>
+                    <include name="testNegativeScenario"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Test Boundary">
+        <classes>
+            <class name="tests.APITest">
+                <methods>
+                    <include name="testBoundaryScenario"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
