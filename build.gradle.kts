@@ -19,6 +19,7 @@ dependencies {
     implementation("org.json:json:20230227")
     implementation("org.apache:apache:31")
     implementation("org.apache.httpcomponents:httpclient:4.5")
+    testImplementation("io.rest-assured:json-schema-validator:5.3.0")
 
 }
 

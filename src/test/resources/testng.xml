@@ -1,29 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">-->
 <suite name="Test API">
-    <test name="Test Positive">
+    <test name="testGetListUsers">
         <classes>
             <class name="api.apiTest">
                 <methods>
-                    <include name="testPositiveScenario"/>
+                    <include name="testGetListUsers"/>
                 </methods>
             </class>
         </classes>
     </test>
-    <test name="Test Negative">
+    <test name="testPostCreateUser">
         <classes>
             <class name="api.apiTest">
                 <methods>
-                    <include name="testNegativeScenario"/>
+                    <include name="testPostCreateUser"/>
                 </methods>
             </class>
         </classes>
     </test>
-    <test name="Test Boundary">
+    <test name="testPostCreateUserWithMissingName">
         <classes>
             <class name="api.apiTest">
                 <methods>
-                    <include name="testBoundaryScenario"/>
+                    <include name="testPostCreateUserWithMissingName"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="testPostCreateUserWithMaxLengthName">
+        <classes>
+            <class name="api.apiTest">
+                <methods>
+                    <include name="testPostCreateUserWithMaxLengthName"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="updateUserTest">
+        <classes>
+            <class name="api.apiTest">
+                <methods>
+                    <include name="updateUserTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="updateUserWithInvalidIdTest">
+        <classes>
+            <class name="api.apiTest">
+                <methods>
+                    <include name="updateUserWithInvalidIdTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="updateUserWithMaxLengthNameTest">
+        <classes>
+            <class name="api.apiTest">
+                <methods>
+                    <include name="updateUserWithMaxLengthNameTest"/>
                 </methods>
             </class>
         </classes>
