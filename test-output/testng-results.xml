@@ -2,32 +2,32 @@
 <testng-results ignored="6" total="9" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-12-16T13:13:47 WIB" name="Test API" finished-at="2023-12-16T13:13:47 WIB" duration-ms="81">
+  <suite started-at="2023-12-17T11:53:31 WIB" name="Test API" finished-at="2023-12-17T11:53:31 WIB" duration-ms="93">
     <groups>
     </groups>
-    <test started-at="2023-12-16T13:13:47 WIB" name="Test Positive" finished-at="2023-12-16T13:13:47 WIB" duration-ms="24">
-      <class name="tests.APITest">
-        <test-method signature="testPositiveScenario()[pri:0, instance:tests.APITest@543788f3]" started-at="2023-12-16T13:13:47 WIB" name="testPositiveScenario" finished-at="2023-12-16T13:13:47 WIB" duration-ms="4" status="PASS">
+    <test started-at="2023-12-17T11:53:31 WIB" name="Test Positive" finished-at="2023-12-17T11:53:31 WIB" duration-ms="29">
+      <class name="api.apiTest">
+        <test-method signature="testPositiveScenario()[pri:0, instance:api.apiTest@2f0a87b3]" started-at="2023-12-17T11:53:31 WIB" name="testPositiveScenario" finished-at="2023-12-17T11:53:31 WIB" duration-ms="4" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testPositiveScenario -->
-      </class> <!-- tests.APITest -->
+      </class> <!-- api.apiTest -->
     </test> <!-- Test Positive -->
-    <test started-at="2023-12-16T13:13:47 WIB" name="Test Negative" finished-at="2023-12-16T13:13:47 WIB" duration-ms="1">
-      <class name="tests.APITest">
-        <test-method signature="testNegativeScenario()[pri:0, instance:tests.APITest@7fad8c79]" started-at="2023-12-16T13:13:47 WIB" name="testNegativeScenario" finished-at="2023-12-16T13:13:47 WIB" duration-ms="0" status="PASS">
+    <test started-at="2023-12-17T11:53:31 WIB" name="Test Negative" finished-at="2023-12-17T11:53:31 WIB" duration-ms="1">
+      <class name="api.apiTest">
+        <test-method signature="testNegativeScenario()[pri:0, instance:api.apiTest@46238e3f]" started-at="2023-12-17T11:53:31 WIB" name="testNegativeScenario" finished-at="2023-12-17T11:53:31 WIB" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testNegativeScenario -->
-      </class> <!-- tests.APITest -->
+      </class> <!-- api.apiTest -->
     </test> <!-- Test Negative -->
-    <test started-at="2023-12-16T13:13:47 WIB" name="Test Boundary" finished-at="2023-12-16T13:13:47 WIB" duration-ms="1">
-      <class name="tests.APITest">
-        <test-method signature="testBoundaryScenario()[pri:0, instance:tests.APITest@5e25a92e]" started-at="2023-12-16T13:13:47 WIB" name="testBoundaryScenario" finished-at="2023-12-16T13:13:47 WIB" duration-ms="0" status="PASS">
+    <test started-at="2023-12-17T11:53:31 WIB" name="Test Boundary" finished-at="2023-12-17T11:53:31 WIB" duration-ms="2">
+      <class name="api.apiTest">
+        <test-method signature="testBoundaryScenario()[pri:0, instance:api.apiTest@4e4aea35]" started-at="2023-12-17T11:53:31 WIB" name="testBoundaryScenario" finished-at="2023-12-17T11:53:31 WIB" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testBoundaryScenario -->
-      </class> <!-- tests.APITest -->
+      </class> <!-- api.apiTest -->
     </test> <!-- Test Boundary -->
   </suite> <!-- Test API -->
 </testng-results>

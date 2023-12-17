@@ -103,17 +103,17 @@
                     <div class="method-list-content passed suite-Test_API">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Test_API" title="tests.APITest" class="method navigator-link" hash-for-method="testBoundaryScenario">testBoundaryScenario</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Test_API" title="api.apiTest" class="method navigator-link" hash-for-method="testBoundaryScenario">testBoundaryScenario</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Test_API" title="tests.APITest" class="method navigator-link" hash-for-method="testNegativeScenario">testNegativeScenario</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Test_API" title="api.apiTest" class="method navigator-link" hash-for-method="testNegativeScenario">testNegativeScenario</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Test_API" title="tests.APITest" class="method navigator-link" hash-for-method="testPositiveScenario">testPositiveScenario</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Test_API" title="api.apiTest" class="method navigator-link" hash-for-method="testPositiveScenario">testPositiveScenario</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Test_API -->
@@ -131,7 +131,7 @@
           <div class="suite-Test_API-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">tests.APITest</span>
+              <span class="class-name">api.apiTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -169,29 +169,29 @@
 &lt;suite name=&quot;Test API&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test Positive&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;tests.APITest&quot;&gt;
+      &lt;class name=&quot;api.apiTest&quot;&gt;
         &lt;methods&gt;
           &lt;include name=&quot;testPositiveScenario&quot;/&gt;
         &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- tests.APITest --&gt;
+      &lt;/class&gt; &lt;!-- api.apiTest --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test Positive --&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test Negative&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;tests.APITest&quot;&gt;
+      &lt;class name=&quot;api.apiTest&quot;&gt;
         &lt;methods&gt;
           &lt;include name=&quot;testNegativeScenario&quot;/&gt;
         &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- tests.APITest --&gt;
+      &lt;/class&gt; &lt;!-- api.apiTest --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test Negative --&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test Boundary&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;tests.APITest&quot;&gt;
+      &lt;class name=&quot;api.apiTest&quot;&gt;
         &lt;methods&gt;
           &lt;include name=&quot;testBoundaryScenario&quot;/&gt;
         &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- tests.APITest --&gt;
+      &lt;/class&gt; &lt;!-- api.apiTest --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test Boundary --&gt;
 &lt;/suite&gt; &lt;!-- Test API --&gt;
@@ -240,21 +240,21 @@ data.addColumn('number', 'Time (ms)');
 data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'testPositiveScenario')
-data.setCell(0, 2, 'tests.APITest')
+data.setCell(0, 2, 'api.apiTest')
 data.setCell(0, 3, 4);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'testNegativeScenario')
-data.setCell(1, 2, 'tests.APITest')
-data.setCell(1, 3, 0);
+data.setCell(1, 2, 'api.apiTest')
+data.setCell(1, 3, 1);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'testBoundaryScenario')
-data.setCell(2, 2, 'tests.APITest')
+data.setCell(2, 2, 'api.apiTest')
 data.setCell(2, 3, 0);
 window.suiteTableData['Test_API']= { tableData: data, tableDiv: 'times-div-Test_API'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 4 ms</span>
+              <span class="suite-total-time">Total running time: 5 ms</span>
               <div id="times-div-Test_API">
               </div> <!-- times-div-Test_API -->
             </div> <!-- times-div -->
@@ -273,15 +273,15 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">tests.APITest</span>
+              <span class="ignored-class-name">api.apiTest</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">testNegativeScenario</span>
-                <br/>
-                <span class="ignored-method-name">testBoundaryScenario</span>
                 <br/>
                 <span class="ignored-method-name">testNegativeScenario</span>
                 <br/>
                 <span class="ignored-method-name">testPositiveScenario</span>
+                <br/>
+                <span class="ignored-method-name">testBoundaryScenario</span>
                 <br/>
                 <span class="ignored-method-name">testPositiveScenario</span>
                 <br/>
@@ -297,18 +297,18 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">tests.APITest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">api.apiTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">testPositiveScenario</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testNegativeScenario</span>
-                <span class="method-start">58 ms</span>
+                <span class="method-start">64 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testBoundaryScenario</span>
-                <span class="method-start">62 ms</span>
+                <span class="method-start">68 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

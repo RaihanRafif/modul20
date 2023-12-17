@@ -3,7 +3,7 @@
 <suite name="Test API">
     <test name="Test Positive">
         <classes>
-            <class name="tests.APITest">
+            <class name="api.apiTest">
                 <methods>
                     <include name="testPositiveScenario"/>
                 </methods>
@@ -12,7 +12,7 @@
     </test>
     <test name="Test Negative">
         <classes>
-            <class name="tests.APITest">
+            <class name="api.apiTest">
                 <methods>
                     <include name="testNegativeScenario"/>
                 </methods>
@@ -21,7 +21,7 @@
     </test>
     <test name="Test Boundary">
         <classes>
-            <class name="tests.APITest">
+            <class name="api.apiTest">
                 <methods>
                     <include name="testBoundaryScenario"/>
                 </methods>
