@@ -22,4 +22,4 @@
 * Cara melakukan testing adalah :
   Running code pada TestRunner.java
 
-![img.png](img.png)
+![![img_1.png](img_1.png)
